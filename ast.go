@@ -25,8 +25,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/xwb1989/sqlparser/dependency/querypb"
-	"github.com/xwb1989/sqlparser/dependency/sqltypes"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/querypb"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/sqltypes"
 )
 
 // Instructions for creating new types: If a type

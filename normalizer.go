@@ -19,9 +19,9 @@ package sqlparser
 import (
 	"fmt"
 
-	"github.com/xwb1989/sqlparser/dependency/sqltypes"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/sqltypes"
 
-	"github.com/xwb1989/sqlparser/dependency/querypb"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/querypb"
 )
 
 // Normalize changes the statement to use bind values, and

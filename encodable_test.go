@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/xwb1989/sqlparser/dependency/sqltypes"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/sqltypes"
 )
 
 func TestEncodable(t *testing.T) {

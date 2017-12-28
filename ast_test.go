@@ -23,7 +23,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/xwb1989/sqlparser/dependency/sqltypes"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/sqltypes"
 )
 
 func TestAppend(t *testing.T) {

@@ -23,10 +23,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/xwb1989/sqlparser/dependency/bytes2"
-	"github.com/xwb1989/sqlparser/dependency/hack"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/bytes2"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/hack"
 
-	"github.com/xwb1989/sqlparser/dependency/querypb"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/querypb"
 )
 
 var (

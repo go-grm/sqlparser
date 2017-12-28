@@ -19,7 +19,7 @@ package sqlparser
 import (
 	"bytes"
 
-	"github.com/xwb1989/sqlparser/dependency/sqltypes"
+	"gopkg.in/go-grm/sqlparser.v1/dependency/sqltypes"
 )
 
 // This file contains types that are 'Encodable'.
