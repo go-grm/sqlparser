@@ -197,6 +197,8 @@ func BuildBindVariable(v interface{}) (*querypb.BindVariable, error) {
 			bv.Values[i] = &values[i]
 		}
 		return bv, nil
+	case fmt.Stringer:
+		return StringBindVariable(v.String()), nil
 	}
 	return nil, fmt.Errorf("type %T not supported as bind var: %v", v, v)
 }
