@@ -199,7 +199,7 @@ func BuildBindVariable(v interface{}) (*querypb.BindVariable, error) {
 		}
 		return bv, nil
 	case time.Time:
-		return StringBindVariable(v.Format(time.RFC3339)), nil
+		return StringBindVariable(v.Format("2006-01-02 15:04:05")), nil
 	case fmt.Stringer:
 		return StringBindVariable(v.String()), nil
 	}
