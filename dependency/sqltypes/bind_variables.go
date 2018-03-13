@@ -21,6 +21,7 @@ import (
 	"fmt"
 	"reflect"
 	"strconv"
+	"time"
 
 	"gopkg.in/go-grm/sqlparser.v1/dependency/querypb"
 )
@@ -197,6 +198,8 @@ func BuildBindVariable(v interface{}) (*querypb.BindVariable, error) {
 			bv.Values[i] = &values[i]
 		}
 		return bv, nil
+	case time.Time:
+		return StringBindVariable(v.Format(time.RFC3339)), nil
 	case fmt.Stringer:
 		return StringBindVariable(v.String()), nil
 	}
